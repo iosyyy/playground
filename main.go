@@ -29,5 +29,5 @@ func main() {
 	DB.Select(clause.Associations).Unscoped().Delete(&Usert{Model: gorm.Model{ID: 2}})
 
 	// this will not work
-	DB.Select(clause.Associations).Unscoped().Delete(&Usert{Model: gorm.Model{ID: 2}})
+	// DB.Select(clause.Associations).Unscoped().Delete(&Usert{}, 2)
 }
